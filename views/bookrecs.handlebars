@@ -1,0 +1,14 @@
+<div class="container p-5" id="book-quiz-container">
+  <div class="row">
+    <h1 class="text-center col-md-12 p-4" style="font-size: 450%">You may enjoy
+      one of these books!</h1>
+      <a id="discover" href="/discover">Back to Discover</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+{{#each recsData as |book|}}
+{{>bookdetails}}
+{{/each}}
+</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="posts list-group">
+    {{#each reviews}}
+    <a class="list-item bg-dark flex-row justify-space-between m-2 p-2" style="height: 3rem;border-radius: 2.5mm" href="/booklog/review/{{id}}" >
+        <span>{{title}}</span>
+        {{!-- <span>{{format_date createdAt}}</span> --}}
+    </a>
+    {{/each}}
+</div>
+<footer class="footer flex-row justify-center">
+    <a id ="new-review" href="/booklog/new-review">➕ New Review</a>
+</footer>
+
